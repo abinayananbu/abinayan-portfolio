@@ -16,19 +16,32 @@ export default function Sidebar() {
   return (
     <aside
       className="
-        fixed ml-3 top-1/2 -translate-y-1/2
-        z-50
+        fixed z-50
+        
+        /* Desktop */
+        md:left-4 md:top-1/2 md:-translate-y-1/2
+        
+        /* Mobile */
+        bottom-0 left-0 w-full md:w-auto
       "
     >
       <nav
         className="
-          flex flex-col gap-4
-          p-3
-          rounded-3xl
+          flex
+        
+          /* Desktop */
+          md:flex-col md:gap-4 md:p-3 md:rounded-3xl
+        
+          /* Mobile */
+          justify-around items-center py-3
+        
           bg-white/5
           backdrop-blur-xl
           border border-white/10
           shadow-2xl
+        
+          /* Mobile full width */
+          w-full md:w-auto
         "
       >
         {menuItems.map((item) => {
@@ -44,7 +57,6 @@ export default function Sidebar() {
                   rounded-xl
                   transition-all duration-300
                   active:scale-90
-
                   ${
                     active
                       ? "bg-indigo-500/20 text-indigo-400 shadow-lg shadow-indigo-500/20"
@@ -55,9 +67,10 @@ export default function Sidebar() {
                 <item.icon size={20} />
               </button>
 
-              {/* Tooltip */}
+              {/* Tooltip (Desktop only) */}
               <div
                 className="
+                  hidden md:block
                   pointer-events-none
                   absolute left-full ml-4
                   top-1/2 -translate-y-1/2
@@ -69,31 +82,17 @@ export default function Sidebar() {
                   border border-white/10
                   text-white
                   shadow-lg
-
                   opacity-0
                   translate-x-3
                   scale-95
                   group-hover:opacity-100
                   group-hover:translate-x-0
                   group-hover:scale-100
-
                   transition-all duration-300 ease-out
                   whitespace-nowrap
                 "
               >
                 {item.name}
-
-                {/* Arrow */}
-                <div
-                  className="
-                    absolute left-0 top-1/2
-                    -translate-y-1/2 -translate-x-1/2
-                    w-2 h-2
-                    bg-black/70
-                    border-l border-b border-white/10
-                    rotate-45
-                  "
-                />
               </div>
             </div>
           );
