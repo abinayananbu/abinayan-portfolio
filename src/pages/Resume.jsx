@@ -13,7 +13,7 @@ export default function Resume() {
       </h1>
 
       {/* Resume Container */}
-      <div className="relative z-10 mt-[60px] max-w-5xl w-full grid md:grid-cols-2 gap-10">
+      <div className="relative z-10 mt-[60px] max-w-5xl w-full mb-3 grid md:grid-cols-2 gap-10">
 
         {/* ========== EXPERIENCE CARD ========== */}
         <ElectricBorder

@@ -13,7 +13,7 @@ export default function Project() {
       </h1>
 
       {/* Projects Container */}
-      <div className="relative z-10 max-w-6xl w-full grid md:grid-cols-2 gap-10">
+      <div className="relative z-10 max-w-6xl w-full mb-3 grid md:grid-cols-2 gap-10">
 
         {/* ================= PROJECT 1 ================= */}
         <ElectricBorder
