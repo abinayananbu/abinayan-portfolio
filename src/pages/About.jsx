@@ -13,7 +13,7 @@ export default function About() {
         ABOUT ME
       </h1>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 mb-14 md:grid-cols-2 gap-16 items-center relative z-10">
 
         {/* Left Side - Profile Image */}
         <motion.div
