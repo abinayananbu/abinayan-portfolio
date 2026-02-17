@@ -72,7 +72,7 @@ export default function About() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            {["React", "Django", "PostgreSQL", "REST APIs", "System Design"].map((skill) => (
+            {["React", "Django", "PostgreSQL","MySQL", "REST APIs", "System Design"].map((skill) => (
               <span
                 key={skill}
                 className="px-4 py-2 text-sm rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20"

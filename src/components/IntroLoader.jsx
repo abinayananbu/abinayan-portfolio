@@ -12,7 +12,7 @@ export default function IntroLoader() {
       <motion.img
         src={logo}
         alt="Logo"
-        className="w-24 h-24"
+        className="w-15 h-15 md:w-20 h-20"
         animate={{ rotate: 360 }}
         transition={{
           repeat: Infinity,
