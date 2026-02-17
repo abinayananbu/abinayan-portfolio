@@ -32,7 +32,7 @@ export default function Resume() {
                  Full Stack Developer
             </h3>
             <p className="text-sm text-gray-400">
-                Freelance / Personal Projects • 2024 - Present
+                Freelance / Personal Projects • 2025 - Present
             </p>
             <p className="text-gray-500 mt-2 text-sm leading-relaxed">
                 Built full-stack web applications using Python (Django / Flask) 

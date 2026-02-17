@@ -25,7 +25,7 @@ export default function Project() {
         >
           <div className="bg-zinc-900 rounded-[20px] p-8 h-full">
             <h2 className="text-2xl font-semibold mb-3">
-              E-Commerce Web Application
+              E-Commerce Web Application 
             </h2>
 
             <p className="text-gray-400 text-sm mb-4">
@@ -43,9 +43,9 @@ export default function Project() {
               <button className="px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-lg text-sm">
                 Live Demo
               </button>
-              <button className="px-4 py-2 bg-white/10 text-white rounded-lg text-sm">
+              <a href="https://github.com/abinayananbu/ecommerce" className="px-4 py-2 bg-white/10 text-white rounded-lg text-sm">
                 GitHub
-              </button>
+              </a>
             </div>
           </div>
         </ElectricBorder>
@@ -60,7 +60,7 @@ export default function Project() {
         >
           <div className="bg-zinc-900 rounded-[20px] p-8 h-full">
             <h2 className="text-2xl font-semibold mb-3">
-              Task Management System
+              ArenaOps – Team Productivity & Automation SaaS
             </h2>
 
             <p className="text-gray-400 text-sm mb-4">
@@ -74,12 +74,12 @@ export default function Project() {
             </p>
 
             <div className="flex gap-4">
-              <button className="px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-lg text-sm">
+              <a  className="px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-lg text-sm">
                 Live Demo
-              </button>
-              <button className="px-4 py-2 bg-white/10 text-white rounded-lg text-sm">
+              </a>
+              <a href="https://github.com/abinayananbu/Team-productivity-saas-ArenaOps-" className="px-4 py-2 bg-white/10 text-white rounded-lg text-sm">
                 GitHub
-              </button>
+              </a>
             </div>
           </div>
         </ElectricBorder>
