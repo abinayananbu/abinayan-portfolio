@@ -3,9 +3,11 @@ import { useRef } from "react";
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import myBackground from "../assets/my-background.jpeg";
 import LiquidEther from "../components/LiquidEther";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const ref = useRef(null);
+  const navigate = useNavigate()
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -116,6 +118,23 @@ export default function Home() {
           Full Stack Developer building scalable SaaS platforms,
           business automation systems, and modern web applications.
         </motion.p>
+
+        <motion.button
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          onClick={() => navigate("/about")}
+          className="
+            mt-8 text-lg px-5 py-3 rounded-full
+            bg-indigo-500/10 text-indigo-300
+            border border-indigo-500 backdrop-blur-md
+            transition-all duration-200
+            hover:scale-95 active:scale-90
+            md:hidden
+          "
+        >
+          More about me
+        </motion.button>
       </motion.div>
 
       {/* SOCIAL ICONS */}
